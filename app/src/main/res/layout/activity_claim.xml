@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:background="@color/splashbg"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <!-- CourseProvider -->
+
+        <EditText android:id="@+id/input_cpname"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="Course Provider"
+
+            />
+
+
+        <!-- Registered Email -->
+        <EditText android:id="@+id/cp_email"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_cpname"
+            android:inputType="textEmailAddress"
+            android:hint=" Registered Email"
+
+            />
+
+
+        <!-- Registered Mobile -->
+
+        <EditText android:id="@+id/cp_mobile"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cp_email"
+            android:inputType="phone"
+            android:hint="Registered Mobile"
+
+            />
+
+        <!-- No. of trained students -->
+
+        <EditText android:id="@+id/cp_trained_count"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cp_mobile"
+            android:inputType="number"
+            android:hint="No. of trained students"
+            />
+
+
+        <!-- No. of qualified students -->
+
+        <EditText android:id="@+id/cp_qualified_count"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cp_trained_count"
+            android:inputType="number"
+            android:hint="No. of qualified students"
+            />
+
+
+        <!-- Link for uploaded documents -->
+
+        <EditText android:id="@+id/cp_doclink"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cp_qualified_count"
+            android:inputType="textUri"
+            android:hint="Drive link of uploaded documents"
+            />
+
+
+        <!-- Submit Button-->
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_cp_data_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:layout_below="@id/cp_doclink"
+            android:layout_centerHorizontal="true"
+            android:padding="12dp"
+            android:text="Submit"
+            android:onClick="onClaimClick"/>
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
